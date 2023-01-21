@@ -26,7 +26,9 @@ body {
   box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
   border-radius: 20px;
   padding: 0.8rem 1rem;
-  color: #fff;
+  color: rgb(0, 0, 0);
+  font-style: normal;
+  font-weight: 900;
 }
 
 .item {
@@ -35,11 +37,12 @@ body {
   border: 1px solid #eee;
   box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
   border-radius: 20px;
-  background: #f7f6f7;
+  background: linear-gradient(90deg, #6f8394 0%, #400583 100%);
   padding: 0.8rem 1rem;
-  color: #828282;
+  color: #ffffff;
   text-align: center;
   cursor: grab;
+  font-weight: bold;
 }
 
 .item:active {
@@ -61,4 +64,18 @@ body {
 
 .done {
   background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.hold {
+ border: 5px solid #eee;
+}
+
+.hide{
+  display: none;
+}
+
+.hovered {
+ border-radius: 20px;
+ box-shadow: rgb(255, 255, 255) 0px 54px 55px, rgb(203, 198, 198) 0px 12px 30px, rgb(255, 255, 255) 0px 4px 6px, rgb(255, 255, 255) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+ transition: 0.3s ease-in-out;
 }
